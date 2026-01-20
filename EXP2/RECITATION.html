@@ -1,0 +1,417 @@
+<!-- Q1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business Card</title>
+    <body style="background-color: aqua; text-align: center;"></body>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="business-card">
+        <img 
+            class="profile-image" 
+            src="https://i.ibb.co/HT6n0B4w/cat.gif" alt="cat" 
+            alt="Profile photo of John Doe">
+        <p class="full-name">John Doe</p>
+        <p class="designation">Front-End Developer</p>
+        <p class="company">Tech Solutions Inc.</p>
+        <hr>
+        <p>john.doe@example.com</p>
+        <p>+1 (555) 123-4567</p>
+        <a 
+            class="portfolio-link" 
+            href="https://example.com" 
+            target="_blank">
+            Portfolio
+        </a>
+        <hr>
+        <div class="social-media">
+            <h2>Connect with me</h2>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
+<!-- Q2. --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <ul class="todo-list">
+    <li>
+      <input type="checkbox" id="task1">
+      <label for="task1">Complete HTML structure</label>
+      <ul class="sub-item">
+        <li>
+          <a href="https://developer.mozilla.org/" 
+             class="sub-item-link" 
+             target="_blank">
+            MDN Web Docs
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <input type="checkbox" id="task2">
+      <label for="task2">Style links with CSS</label>
+      <ul class="sub-item">
+        <li>
+          <a href="https://www.w3schools.com/css/" 
+             class="sub-item-link" 
+             target="_blank">
+            CSS Reference
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <input type="checkbox" id="task3">
+      <label for="task3">Practice pseudo-classes</label>
+      <ul class="sub-item">
+        <li>
+          <a href="https://css-tricks.com/" 
+             class="sub-item-link" 
+             target="_blank">
+            CSS Tricks
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <input type="checkbox" id="task4">
+      <label for="task4">Test accessibility states</label>
+      <ul class="sub-item">
+        <li>
+          <a href="https://www.a11yproject.com/" 
+             class="sub-item-link" 
+             target="_blank">
+            Accessibility Project
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
+<!-- Q3 -->
+ !DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required>
+      </div>
+      <div>
+        <label for="position">Position</label>
+        <select id="position" required>
+          <option value="">Select a position</option>
+          <option value="developer">Developer</option>
+          <option value="designer">Designer</option>
+          <option value="manager">Manager</option>
+        </select>
+      </div>
+      <fieldset class="radio-group">
+        <legend>Availability</legend>
+        <label>
+          <input type="radio" name="availability" value="full-time" required>
+          Full-time
+        </label>
+        <label>
+          <input type="radio" name="availability" value="part-time">
+          Part-time
+        </label>
+        <label>
+          <input type="radio" name="availability" value="freelance">
+          Freelance
+        </label>
+      </fieldset>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+<!-- Q4 -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Grid</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+    }
+    .color-grid {
+      display: flex;
+      gap: 10px;
+    }
+    .color-box {
+      width: 100px;
+      height: 100px;
+    }
+    .color1 {
+      background-color: #3498db;
+    }
+    .color2 {
+      background-color: rgb(231, 76, 60);
+    }
+    .color3 {
+      background-color: green;
+    }
+    .color4 {
+      background-color: hsl(280, 60%, 50%);
+    }
+    .color5 {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <div class="color-grid">
+    <div class="color-box color1"></div>
+    <div class="color-box color2"></div>
+    <div class="color-box color3"></div>
+    <div class="color-box color4"></div>
+    <div class="color-box color5"></div>
+  </div>
+</body>
+</html>
+<!-- Q5 -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feature Selection</title>
+  <style>
+    .feature-card-container {
+      display: flex;
+      gap: 20px;
+    }
+    .feature-card {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+    }
+    input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #333;
+      position: relative;
+    }
+    input[type="checkbox"]:checked {
+      background-color: #4caf50;
+      border-color: #2e7d32;
+    }
+    input[type="checkbox"]:checked::after {
+      content: "✓";
+      color: white;
+      font-size: 16px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <h1>Feature Selection</h1>
+  <div class="feature-card-container">
+    <label class="feature-card">
+      <input type="checkbox">
+      Feature One
+    </label>
+    <label class="feature-card">
+      <input type="checkbox">
+      Feature Two
+    </label>
+  </div>
+</body>
+</html>
+<!-- Q6 -->
+ !DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email</title>
+  <style>
+    #email {
+      padding: 50px;
+      margin-top: 50px;
+      width: 500px;
+      border: 2px solid #000;
+      box-sizing: border-box;
+    }
+    #confidential,
+    #top-secret {
+      display: inline-block;
+      padding: 10px;
+      margin-left: 20px;
+      border: 2px solid #000;
+      transform: rotate(-10deg);
+    }
+    #top-secret {
+      transform: rotate(10deg);
+    }
+    .blurred {
+      filter: blur(3px);
+    }
+  </style>
+</head>
+<body>
+  <main id="email">
+    <div id="confidential">CONFIDENTIAL</div>
+    <div id="top-secret">TOP SECRET</div>
+    <p>
+      This email contains <span class="blurred">sensitive information</span> that should
+      not be shared with <span class="blurred">unauthorized individuals</span>.
+    </p>
+    <p>
+      Please review the <span class="blurred">attached documents</span> carefully before
+      proceeding with any actions.
+    </p>
+    <p>
+      Failure to comply may result in <span class="blurred">serious consequences</span>.
+    </p>
+  </main>
+</body>
+</html>
+<!-- Q7 -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pricing Plans</title>
+  <style>
+    .pricing-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .pricing-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 0 0 200px;
+      border: 2px solid black;
+      padding: 10px;
+    }
+    .basic-plan {
+      order: 0;
+    }
+    .pro-plan {
+      order: 1;
+      flex-grow: 2;
+    }
+    .premium-plan {
+      order: 2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pricing Plans</h1>
+  <div class="pricing-container">
+    <div class="pricing-card basic-plan">
+      <h2>Basic</h2>
+      <p>$9/month</p>
+    </div>
+    <div class="pricing-card pro-plan">
+      <h2>Pro</h2>
+      <p>$19/month</p>
+    </div>
+    <div class="pricing-card premium-plan">
+      <h2>Premium</h2>
+      <p>$29/month</p>
+    </div>
+  </div>
+</body>
+</html>
+<!-- Q8 -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+      display: flex;
+      gap: 15px;
+      z-index: 1000;
+    }
+    #navbar a {
+      color: white;
+      text-decoration: none;
+    }
+    #welcome-section {
+      margin-top: 60px;
+      padding: 50px;
+      background-color: #f4f4f4;
+    }
+    #project-section {
+      padding: 50px;
+    }
+    .project-tile {
+      border: 2px solid #000;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 600px) {
+      #navbar {
+        flex-direction: column;
+      }
+      #welcome-section, #project-section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#welcome-section">Welcome</a>
+    <a href="#project-section">Projects</a>
+    <a id="profile-link" href="https://example.com" target="_blank">Profile</a>
+  </nav>
+  <section id="welcome-section">
+    <h1>Welcome to My Portfolio</h1>
+  </section>
+  <section id="project-section">
+    <div class="project-tile">
+      <a href="https://example.com/project1" target="_blank">Project 1</a>
+    </div>
+  </section>
+</body>
+</html>
