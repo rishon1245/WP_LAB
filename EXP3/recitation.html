@@ -1,5 +1,4 @@
-<Q!
-
+<!-- Q1 -->
 !DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,6 +56,455 @@
     </div>
 
   </div>
+
+</body>
+</html>
+<!-- Q2 -->
+<main id="playing-cards">
+
+  <div class="card">
+    <div class="left">♠</div>
+    <div class="middle">
+      <div>♠</div>
+      <div>♠</div>
+      <div>♠</div>
+    </div>
+    <div class="right">♠</div>
+  </div>
+
+  <div class="card">
+    <div class="left">♥</div>
+    <div class="middle">
+      <div>♥</div>
+      <div>♥</div>
+      <div>♥</div>
+    </div>
+    <div class="right">♥</div>
+  </div>
+
+  <div class="card">
+    <div class="left">♦</div>
+    <div class="middle">
+      <div>♦</div>
+      <div>♦</div>
+      <div>♦</div>
+    </div>
+    <div class="right">♦</div>
+  </div>
+
+</main>
+<!-- Q3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Documentation</title>
+  <style>
+    /* Navbar styling */
+    #navbar {
+      position: fixed; /* always on left edge */
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background-color: #0a0a23;
+      color: #fff;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    #navbar header {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .nav-link {
+      display: block;
+      margin: 10px 0;
+      color: #fdb347;
+      text-decoration: none;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Main content */
+    #main-doc {
+      margin-left: 270px; /* leave space for navbar */
+      padding: 20px;
+    }
+
+    /* Sections */
+    .main-section {
+      margin-bottom: 40px;
+    }
+
+    .main-section header {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    li {
+      margin-left: 20px;
+      margin-bottom: 5px;
+    }
+
+    code {
+      display: block;
+      background-color: #f5f6f7;
+      padding: 5px;
+      margin: 10px 0;
+      font-family: monospace;
+      border-radius: 4px;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <header>Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Setup_Instructions">Setup Instructions</a>
+    <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+    <a class="nav-link" href="#CSS_Fundamentals">CSS Fundamentals</a>
+    <a class="nav-link" href="#JavaScript_Overview">JavaScript Overview</a>
+  </nav>
+
+  <!-- Main content -->
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Welcome to the Technical Documentation project.</p>
+      <p>This project will teach you the basics of web development.</p>
+      <p>Focus on HTML, CSS, and JavaScript for beginners.</p>
+      <code>console.log('Hello World');</code>
+      <li>Learn HTML structure</li>
+    </section>
+
+    <section class="main-section" id="Setup_Instructions">
+      <header>Setup Instructions</header>
+      <p>Install a code editor like VS Code.</p>
+      <p>Install live server extensions to preview your code.</p>
+      <code>npm install live-server -g</code>
+      <li>Set up folder structure</li>
+    </section>
+
+    <section class="main-section" id="HTML_Basics">
+      <header>HTML Basics</header>
+      <p>HTML uses tags to define elements.</p>
+      <p>Common tags include &lt;h1&gt;, &lt;p&gt;, and &lt;a&gt;.</p>
+      <p>HTML forms the skeleton of your web page.</p>
+      <code>&lt;h1&gt;Title&lt;/h1&gt;</code>
+      <li>Use semantic elements</li>
+    </section>
+
+    <section class="main-section" id="CSS_Fundamentals">
+      <header>CSS Fundamentals</header>
+      <p>CSS styles your HTML elements.</p>
+      <p>Use classes and IDs to target elements.</p>
+      <code>p { color: blue; }</code>
+      <li>Understand the box model</li>
+    </section>
+
+    <section class="main-section" id="JavaScript_Overview">
+      <header>JavaScript Overview</header>
+      <p>JavaScript adds interactivity to web pages.</p>
+      <p>You can manipulate the DOM using JS.</p>
+      <code>document.getElementById('id');</code>
+      <li>Use variables and functions</li>
+    </section>
+
+  </main>
+
+</body>
+</html>
+<!-- Q4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Newspaper Layout</title>
+  <style>
+    /* Grid layout for newspaper */
+    .newspaper-layout {
+      display: grid;
+      grid-template-areas:
+        "title title title"
+        "feature-article feature-article cover-image"
+        "secondary-article secondary-article cover-image"
+        "small-article1 small-article2 small-article3";
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto 1fr 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    /* Grid area assignments */
+    .title {
+      grid-area: title;
+      text-align: center;
+      background-color: #0a0a23;
+      color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .feature-article { grid-area: feature-article; }
+    .cover-image { grid-area: cover-image; }
+    .secondary-article { grid-area: secondary-article; }
+    .small-article1 { grid-area: small-article1; }
+    .small-article2 { grid-area: small-article2; }
+    .small-article3 { grid-area: small-article3; }
+
+    /* Cover image styling */
+    .cover-image img {
+      max-width: 100%;
+      display: block;
+      border-radius: 5px;
+    }
+
+    /* Basic styling for articles */
+    article, figure {
+      padding: 15px;
+      background-color: #f5f6f7;
+      border-radius: 5px;
+    }
+
+    h1, h2, h3 {
+      margin: 10px 0;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="newspaper-layout">
+
+    <!-- Title -->
+    <header class="title">
+      <h1>Daily Tech News</h1>
+    </header>
+
+    <!-- Feature article -->
+    <article class="feature-article">
+      <h2>AI Revolution in 2026</h2>
+      <p>Artificial Intelligence continues to reshape industries across the globe, bringing both opportunities and challenges for the workforce.</p>
+    </article>
+
+    <!-- Cover image -->
+    <figure class="cover-image">
+      <img src="https://via.placeholder.com/300x400" alt="Newspaper Cover Image">
+    </figure>
+
+    <!-- Secondary article -->
+    <article class="secondary-article">
+      <h2>Quantum Computing Breakthrough</h2>
+      <p>Researchers have achieved a major milestone in quantum computing, pushing the limits of computational power and speed.</p>
+    </article>
+
+    <!-- Small articles -->
+    <article class="small-article1">
+      <h3>Tech Startups Rising</h3>
+      <p>New startups are disrupting traditional markets with innovative solutions and services.</p>
+    </article>
+
+    <article class="small-article2">
+      <h3>Space Travel Updates</h3>
+      <p>Commercial space travel continues to expand, with new missions scheduled for the next decade.</p>
+    </article>
+
+    <article class="small-article3">
+      <h3>Cybersecurity Trends</h3>
+      <p>As technology evolves, cybersecurity becomes more critical to protect data and infrastructure worldwide.</p>
+    </article>
+
+  </main>
+
+</body>
+</html>
+<!-- Q5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Landing Page</title>
+  <style>
+    /* Reset default margins */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f6f7;
+    }
+
+    /* Header */
+    #header {
+      background-color: #0a0a23;
+      color: white;
+      padding: 20px;
+      display: flex; /* Flexbox used here */
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: sticky; /* Sticky navbar at top */
+      top: 0;
+      z-index: 1000;
+    }
+
+    #header-img {
+      max-height: 60px;
+    }
+
+    /* Navbar */
+    #nav-bar {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-link {
+      color: #fdb347;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Video */
+    #video {
+      display: block;
+      margin: 20px auto;
+      max-width: 800px;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Form */
+    #form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    #email {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    #submit {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #0a0a23;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #submit:hover {
+      background-color: #fdb347;
+      color: #0a0a23;
+    }
+
+    /* Media query */
+    @media (max-width: 768px) {
+      #header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #nav-bar {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      #video {
+        width: 100%;
+      }
+
+      #form {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with logo and navbar -->
+  <header id="header">
+    <img id="header-img" src="https://via.placeholder.com/150x60" alt="Logo">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#video">Video</a>
+      <a class="nav-link" href="#form">Subscribe</a>
+      <a class="nav-link" href="#footer">Footer</a>
+    </nav>
+  </header>
+
+  <!-- Video section -->
+  <iframe
+    id="video"
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    title="Product Video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  <!-- Form section -->
+  <form id="form" action="https://www.freecodecamp.org/email-submit">
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      placeholder="Enter your email" 
+      required>
+    <input 
+      type="submit" 
+      id="submit" 
+      value="Subscribe">
+  </form>
+
+  <!-- Footer placeholder -->
+  <footer id="footer" style="text-align:center; margin:40px 0;">
+    <p>&copy; 2026 My Product Landing Page</p>
+  </footer>
 
 </body>
 </html>
