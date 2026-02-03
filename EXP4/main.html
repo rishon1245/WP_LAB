@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      padding: 12px 30px;
+      display: flex;
+      gap: 25px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    #navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    #navbar a:hover {
+      color: #ffd369;
+    }
+    #welcome-section {
+      margin-top: 80px;
+      padding: 80px 20px;
+      background: linear-gradient(120deg, #89f7fe, #66a6ff);
+      text-align: center;
+      color: #222;
+    }
+    #welcome-section h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+    #welcome-section p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    button {
+      margin-top: 25px;
+      padding: 12px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 25px;
+      background: #1e3c72;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background: #16325c;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #1e3c72;
+      font-weight: 500;
+    }
+    #project-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    #project-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+    .project-tile {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .project-tile:hover {
+      transform: translateY(-5px);
+    }
+    .project-tile a {
+      text-decoration: none;
+      font-size: 20px;
+      color: #2a5298;
+      font-weight: 600;
+    }
+    @media (max-width: 600px) {
+      #navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+      #welcome-section h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#welcome-section">Welcome</a>
+    <a href="#project-section">Projects</a>
+    <a id="profile-link" href="https://github.com/rishon1245" target="_blank">Profile</a>
+  </nav>
+  <section id="welcome-section">
+    <h1>Hi, I'm Rishon 👋</h1>
+    <p>A simple portfolio made using HTML, CSS & JavaScript</p>
+    <button id="welcomeBtn">Say Hello</button>
+    <p id="message"></p>
+  </section>
+  <section id="project-section">
+    <h2>My Projects</h2>
+    <div class="project-tile">
+      <a href="https://github.com/rishon1245/WP_LAB/tree/main/EXP1" target="_blank">
+        Project 1 – Web Programming Lab
+      </a>
+    </div>
+  </section>
+  <script>
+    const button = document.getElementById("welcomeBtn");
+    const message = document.getElementById("message");
+    button.addEventListener("click", () => {
+      message.textContent = "Thanks for stopping by! Hope you like my work 🚀";
+    });
+  </script>
+</body>
+</html>
